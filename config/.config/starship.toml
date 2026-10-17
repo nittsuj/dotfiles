@@ -25,3 +25,10 @@ truncate_to_repo = true
 [git_branch]
 symbol = " "
 style = "bold purple"
+
+[cmd_duration]
+min_time = 500                  # Show duration only if command takes longer than 500ms (0.5s)
+show_milliseconds = false       # Set to true if you want precise millisecond timing
+format = "took [$duration]($style) "
+style = "bold yellow"
+disabled = false
