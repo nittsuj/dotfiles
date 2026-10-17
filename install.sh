@@ -45,4 +45,9 @@ elif command -v code &> /dev/null; then
   cat config/vscode-extensions.txt | xargs -L 1 code --install-extension
 fi
 
+echo "=== 7. Headlessly Syncing Neovim Plugins ==="
+if command -v nvim &> /dev/null; then
+  nvim --headless "+Lazy! sync" +qa
+fi
+
 echo "=== Setup Complete! ==="
