@@ -1,0 +1,10 @@
+cweijan.vscode-office
+golang.go
+ms-azuretools.vscode-containers
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-python-envs
+myriad-dreamin.tinymist
+reshi1994.libreoffice-preview
+ritwickdey.liveserver
+vue.volar
