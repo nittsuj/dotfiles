@@ -4,7 +4,10 @@ export PATH="$HOME/.local/bin:$PATH"
 . "$HOME/.local/bin/env"
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
+
+# Initialize Starship Prompt
+eval "$(starship init zsh)"
 
 plugins=(git ssh-agent)
 
