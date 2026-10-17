@@ -11,3 +11,9 @@ plugins=(git ssh-agent)
 zstyle ':omz:plugins:ssh-agent' identities id_ed25519
 
 source $ZSH/oh-my-zsh.sh
+
+# Aliases
+alias ls='ls --color=auto'
+alias la='ls -la'
+alias dot='cd ~/dotfiles'
+alias update='sudo pacman -Syu && yay -Sua'
