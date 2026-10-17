@@ -1,0 +1,6 @@
+2026-10-17 15:38:14.978 [info] Getting Manifest... golang.go
+2026-10-17 15:38:17.402 [info] Installing extension: golang.go {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 15:38:26.814 [info] Extension signature verification result for golang.go: Success. Executed: true. Duration: 5653ms.
+2026-10-17 15:38:26.863 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/golang.go-0.56.1-universal: golang.go
+2026-10-17 15:38:26.896 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/golang.go-0.56.1-universal
+2026-10-17 15:38:26.923 [info] Extension installed successfully: golang.go vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json

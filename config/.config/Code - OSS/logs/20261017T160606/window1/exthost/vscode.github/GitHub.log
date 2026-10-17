@@ -1,0 +1,19 @@
+2026-10-17 16:06:09.305 [info] Log level: Info
+2026-10-17 16:06:39.923 [info] Log level: Info
+2026-10-17 16:06:46.016 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2026-10-17 16:06:46.066 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2026-10-17 16:07:44.757 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for nittsuj/cipher-safe-backend: Error: No GitHub authentication session available.
+2026-10-17 19:04:24.172 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2026-10-17 19:23:38.826 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: getaddrinfo EAI_AGAIN api.github.com
+2026-10-17 19:23:39.309 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.309 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.309 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.309 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.309 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.310 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.310 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:39.310 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:41.307 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for nittsuj/cipher-safe-frontend: HttpError: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:44.805 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:49.801 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)
+2026-10-17 19:23:51.800 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for nittsuj/cipher-safe-backend: HttpError: Connect Timeout Error (attempted address: api.github.com:443, timeout: 10000ms)

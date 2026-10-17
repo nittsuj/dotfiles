@@ -1,0 +1,135 @@
+2026-10-17 16:20:24.138 [warning] Dir "/home/nittsuj/Documents/college-projects/cipher-safe/.pixi/envs" is not watchable (directory does not exist)
+2026-10-17 16:20:24.152 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:518:1689)
+	at a.onDidWriteTerminalData (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:685:149806)
+	at new m (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:919566)
+	at ce (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1761898)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765421
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765449
+	at he (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765514)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765993
+	at fe (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765935)
+	at ve (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765969)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763216
+	at e.reduce.constructorInjections (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1764820)
+	at Array.reduce (<anonymous>)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1764793
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765073
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765449
+	at he (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765514)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765993
+	at fe (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765935)
+	at ve (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765969)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763216
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1792781
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1792802
+	at e._get (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1791816)
+	at e._getButThrowIfAsync (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1791876)
+	at e.get (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1787607)
+	at e.dynamicValue (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1777402)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763599
+	at de (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763855)
+	at he (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765563)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765993
+	at fe (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765935)
+	at ve (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765969)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763216
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763151
+	at Array.map (<anonymous>)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763123
+	at e.reduce.constructorInjections (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1764820)
+	at Array.reduce (<anonymous>)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1764793
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765073
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765449
+	at he (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765514)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765993
+	at fe (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765935)
+	at ve (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1765969)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1763216
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1792781
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1792802
+	at e._get (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1791816)
+	at e._getButThrowIfAsync (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1791876)
+	at e.get (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:1787607)
+	at a.get (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:571746)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:481935
+	at async t.activateComponents (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:480242)
+	at async /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2731076
+	at async e (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2730532)
+	at async Ub._activate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:555:16021)
+	at async Ub._waitForDepsThenActivate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:555:15963)
+	at async Ub._initialize (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:555:15330)]
+2026-10-17 16:20:24.155 [info] Starting Environment refresh
+2026-10-17 16:20:24.155 [info] Searching for interpreters in posix paths locator
+2026-10-17 16:20:24.158 [info] Searching for pyenv environments
+2026-10-17 16:20:24.158 [info] Searching for conda environments
+2026-10-17 16:20:24.158 [info] Searching for global virtual environments
+2026-10-17 16:20:24.158 [info] Searching for custom virtual environments
+2026-10-17 16:20:24.161 [info] pyenv is not installed
+2026-10-17 16:20:24.161 [info] Finished searching for pyenv environments: 6 milliseconds
+2026-10-17 16:20:24.161 [info] Finished searching for custom virtual envs: 5 milliseconds
+2026-10-17 16:20:24.166 [info] > conda info --json
+2026-10-17 16:20:24.173 [info] > hatch env show --json
+2026-10-17 16:20:24.173 [info] cwd: .
+2026-10-17 16:20:24.183 [info] > pyenv which python
+2026-10-17 16:20:24.183 [info] cwd: .
+2026-10-17 16:20:24.183 [info] Finished searching for global virtual envs: 27 milliseconds
+2026-10-17 16:20:24.189 [info] Found: /bin/python --> /bin/python3.14
+2026-10-17 16:20:24.190 [info] Found: /bin/python3 --> /bin/python3.14
+2026-10-17 16:20:24.190 [info] Found: /bin/python3.14 --> /bin/python3.14
+2026-10-17 16:20:24.205 [info] Found: /sbin/python --> /sbin/python3.14
+2026-10-17 16:20:24.205 [info] Found: /sbin/python3 --> /sbin/python3.14
+2026-10-17 16:20:24.205 [info] Found: /sbin/python3.14 --> /sbin/python3.14
+2026-10-17 16:20:24.208 [info] Found: /usr/bin/python --> /usr/bin/python3.14
+2026-10-17 16:20:24.208 [info] Found: /usr/bin/python3 --> /usr/bin/python3.14
+2026-10-17 16:20:24.208 [info] Found: /usr/bin/python3.14 --> /usr/bin/python3.14
+2026-10-17 16:20:24.220 [info] Found: /usr/sbin/python --> /usr/sbin/python3.14
+2026-10-17 16:20:24.220 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.14
+2026-10-17 16:20:24.220 [info] Found: /usr/sbin/python3.14 --> /usr/sbin/python3.14
+2026-10-17 16:20:24.230 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/interpreterInfo.py
+2026-10-17 16:20:24.238 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/interpreterInfo.py
+2026-10-17 16:20:24.241 [info] Finished searching for interpreters in posix paths locator: 86 milliseconds
+2026-10-17 16:20:24.244 [info] Environments refresh paths discovered (event): 90 milliseconds
+2026-10-17 16:20:24.244 [info] Environments refresh paths discovered: 90 milliseconds
+2026-10-17 16:20:24.259 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/interpreterInfo.py
+2026-10-17 16:20:24.264 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/python_files/interpreterInfo.py
+2026-10-17 16:20:24.280 [info] Environments refresh finished (event): 126 milliseconds
+2026-10-17 16:20:24.285 [info] Environment refresh took 130 milliseconds
+2026-10-17 16:20:24.289 [error] [
+  'Failed to activate a workspace, Class name = v, completed in 135ms, has a falsy return value, Arg 1: <Uri:/home/nittsuj/Documents/college-projects/cipher-safe>, Arg 2: {"started":1792228824112}, Return Value: undefined',
+  [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+  	at M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:518:1689)
+  	at get testResults (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:685:142641)
+  	at x.activate (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:954140)
+  	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2437
+  	at Array.map (<anonymous>)
+  	at v.activateWorkspace (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2428)]
+]
+2026-10-17 16:20:24.290 [error] Failure during activation. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:518:1689)
+	at get testResults (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:685:142641)
+	at x.activate (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:954140)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2437
+	at Array.map (<anonymous>)
+	at v.activateWorkspace (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2428)]
+2026-10-17 16:20:24.290 [error] sendStartupTelemetry() failed. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:518:1689)
+	at get testResults (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:685:142641)
+	at x.activate (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:954140)
+	at /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2437
+	at Array.map (<anonymous>)
+	at v.activateWorkspace (/home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal/out/client/extension.js:2:2428)]
+2026-10-17 16:20:24.290 [info] Python interpreter path: /bin/python
+2026-10-17 16:20:24.905 [info] Starting Jedi language server for cipher-safe.
+2026-10-17 16:38:17.900 [error] Unable to find workspace for given file
+2026-10-17 19:22:40.673 [error] Unable to find workspace for given file
+2026-10-17 19:43:06.447 [error] Unable to find workspace for given file

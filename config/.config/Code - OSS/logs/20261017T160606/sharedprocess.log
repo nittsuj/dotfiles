@@ -1,0 +1,54 @@
+2026-10-17 16:08:47.691 [info] Getting Manifest... cweijan.vscode-office
+2026-10-17 16:08:48.161 [info] Installing extension: cweijan.vscode-office {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:08:53.353 [info] Extension signature verification result for cweijan.vscode-office: Success. Executed: true. Duration: 542ms.
+2026-10-17 16:08:53.883 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/cweijan.vscode-office-4.2.2-universal: cweijan.vscode-office
+2026-10-17 16:08:53.907 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/cweijan.vscode-office-4.2.2-universal
+2026-10-17 16:08:53.919 [info] Extension installed successfully: cweijan.vscode-office vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:19:59.231 [info] Getting Manifest... myriad-dreamin.tinymist
+2026-10-17 16:19:59.894 [info] Installing extension: myriad-dreamin.tinymist {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:20:13.521 [info] Getting Manifest... ms-python.python
+2026-10-17 16:20:14.696 [info] Installing extension: ms-python.python {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:20:15.004 [info] Getting Manifest... ms-python.vscode-python-envs
+2026-10-17 16:20:15.595 [info] Getting Manifest... ms-python.debugpy
+2026-10-17 16:20:16.133 [info] Installing extension: ms-python.vscode-python-envs {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"},"installGivenVersion":false,"context":{"dependecyOrPackExtensionInstall":true}}
+2026-10-17 16:20:16.134 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"},"installGivenVersion":false,"context":{"dependecyOrPackExtensionInstall":true}}
+2026-10-17 16:20:20.705 [info] Extension signature verification result for ms-python.vscode-python-envs: Success. Executed: true. Duration: 1329ms.
+2026-10-17 16:20:20.753 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/ms-python.vscode-python-envs-1.40.0-universal: ms-python.vscode-python-envs
+2026-10-17 16:20:20.760 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/ms-python.vscode-python-envs-1.40.0-universal
+2026-10-17 16:20:22.932 [info] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 211ms.
+2026-10-17 16:20:23.085 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/ms-python.debugpy-2026.6.0-linux-x64: ms-python.debugpy
+2026-10-17 16:20:23.095 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/ms-python.debugpy-2026.6.0-linux-x64
+2026-10-17 16:20:23.256 [info] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 164ms.
+2026-10-17 16:20:23.766 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal: ms-python.python
+2026-10-17 16:20:23.815 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/ms-python.python-2026.4.0-universal
+2026-10-17 16:20:23.828 [info] Extension installed successfully: ms-python.vscode-python-envs vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:20:23.828 [info] Extension installed successfully: ms-python.debugpy vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:20:23.828 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:21:36.008 [info] Extension signature verification result for myriad-dreamin.tinymist: Success. Executed: true. Duration: 476ms.
+2026-10-17 16:21:36.474 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/myriad-dreamin.tinymist-0.15.10-linux-x64: myriad-dreamin.tinymist
+2026-10-17 16:21:36.481 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/myriad-dreamin.tinymist-0.15.10-linux-x64
+2026-10-17 16:21:36.497 [info] Extension installed successfully: myriad-dreamin.tinymist vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:22:06.973 [info] Getting Manifest... vue.volar
+2026-10-17 16:22:07.219 [info] Installing extension: vue.volar {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:22:08.853 [info] Extension signature verification result for vue.volar: Success. Executed: true. Duration: 456ms.
+2026-10-17 16:22:08.885 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/vue.volar-3.3.13-universal: vue.volar
+2026-10-17 16:22:08.891 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/vue.volar-3.3.13-universal
+2026-10-17 16:22:08.903 [info] Extension installed successfully: vue.volar vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:22:39.029 [info] Getting Manifest... ritwickdey.liveserver
+2026-10-17 16:22:39.708 [info] Installing extension: ritwickdey.liveserver {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:26:43.539 [info] Extension signature verification result for ritwickdey.liveserver: Success. Executed: true. Duration: 5371ms.
+2026-10-17 16:26:44.472 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/ritwickdey.liveserver-5.7.10-universal: ritwickdey.liveserver
+2026-10-17 16:26:44.563 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/ritwickdey.liveserver-5.7.10-universal
+2026-10-17 16:26:44.577 [info] Extension installed successfully: ritwickdey.liveserver vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:28:17.915 [info] Getting Manifest... ms-azuretools.vscode-containers
+2026-10-17 16:28:18.191 [info] Installing extension: ms-azuretools.vscode-containers {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:28:20.840 [info] Extension signature verification result for ms-azuretools.vscode-containers: Success. Executed: true. Duration: 479ms.
+2026-10-17 16:28:20.877 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/ms-azuretools.vscode-containers-2.4.5-universal: ms-azuretools.vscode-containers
+2026-10-17 16:28:20.884 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/ms-azuretools.vscode-containers-2.4.5-universal
+2026-10-17 16:28:20.896 [info] Extension installed successfully: ms-azuretools.vscode-containers vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
+2026-10-17 16:29:08.454 [info] Getting Manifest... reshi1994.libreoffice-preview
+2026-10-17 16:29:08.620 [info] Installing extension: reshi1994.libreoffice-preview {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json","path":"/home/nittsuj/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"isBuiltin":false,"isApplicationScoped":false,"productVersion":{"version":"1.138.0","date":"2026-09-15T07:24:32Z"}}
+2026-10-17 16:29:42.345 [info] Extension signature verification result for reshi1994.libreoffice-preview: Success. Executed: true. Duration: 1827ms.
+2026-10-17 16:29:42.766 [info] Extracted extension to file:///home/nittsuj/.vscode-oss/extensions/reshi1994.libreoffice-preview-0.0.5-universal: reshi1994.libreoffice-preview
+2026-10-17 16:29:42.789 [info] Renamed to /home/nittsuj/.vscode-oss/extensions/reshi1994.libreoffice-preview-0.0.5-universal
+2026-10-17 16:29:42.810 [info] Extension installed successfully: reshi1994.libreoffice-preview vscode-userdata:/home/nittsuj/.vscode-oss/extensions/extensions.json
