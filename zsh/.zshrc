@@ -9,6 +9,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set Powerlevel10k theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Plugins (oh-my-zsh defaults to just "git" without this)
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
