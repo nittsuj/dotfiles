@@ -2,7 +2,7 @@
 
 set -e
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 
 echo "=== 1. Installing Official Pacman Packages ==="
 if [ -f "packages/pkglist.txt" ] && command -v pacman &> /dev/null; then
