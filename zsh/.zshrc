@@ -1,22 +1,15 @@
-# User-local toolchain (Node from ~/.local/node); added by cipher-safe setup.
-export PATH="$HOME/.local/bin:$PATH"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-. "$HOME/.local/bin/env"
-
+# Path to Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME=""
 
-# Initialize Starship Prompt
-eval "$(starship init zsh)"
-
-plugins=(git ssh-agent)
-
-zstyle ':omz:plugins:ssh-agent' identities id_ed25519
+# Set Powerlevel10k theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 source $ZSH/oh-my-zsh.sh
 
-# Aliases
-alias ls='ls --color=auto'
-alias la='ls -la'
-alias dot='cd ~/dotfiles'
-alias update='sudo pacman -Syu && yay -Sua'
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
