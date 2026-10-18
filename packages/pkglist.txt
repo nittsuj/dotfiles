@@ -2,7 +2,6 @@ baobab
 base
 base-devel
 cmatrix
-code
 decibels
 docker
 docker-buildx
