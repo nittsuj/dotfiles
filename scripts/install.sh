@@ -24,13 +24,22 @@ if [ -f "packages/aur-pkglist.txt" ] && command -v yay &> /dev/null; then
   yay -S --needed --noconfirm - < packages/aur-pkglist.txt
 fi
 
-echo "=== 4. Symlinking Dotfiles with GNU Stow ==="
+echo "=== 4. Installing VS Code Extensions ==="
+if [ -f "packages/vscode-extensions.txt" ] && command -v code &> /dev/null; then
+  while IFS= read -r extension || [ -n "$extension" ]; do
+    if [ -n "$extension" ]; then
+      code --install-extension "$extension" --force
+    fi
+  done < packages/vscode-extensions.txt
+fi
+
+echo "=== 5. Symlinking Dotfiles with GNU Stow ==="
 stow fastfetch
 stow kitty
 stow nvim
 stow zsh
 
-echo "=== 5. Setting up Oh My Zsh, Powerlevel10k and Plugins ==="
+echo "=== 6. Setting up Oh My Zsh, Powerlevel10k and Plugins ==="
 # Cloned directly instead of using the omz installer, which would overwrite ~/.zshrc
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git "$HOME/.oh-my-zsh"
@@ -50,7 +59,7 @@ if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
   git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 fi
 
-echo "=== 6. Headlessly Syncing Neovim Plugins ==="
+echo "=== 7. Headlessly Syncing Neovim Plugins ==="
 if command -v nvim &> /dev/null; then
   nvim --headless "+Lazy! sync" +qa
 fi
