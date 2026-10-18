@@ -48,3 +48,8 @@ config/.config/Code - OSS/Network Persistent State
 config/.config/Code - OSS/SharedStorage/
 config/.config/Code - OSS/TransportSecurity
 config/.config/Code - OSS/Trust Tokens-journal
+# VS Code runtime under new stow package
+vscode/.config/Code - OSS/User/workspaceStorage/
+vscode/.config/Code - OSS/User/globalStorage/
+vscode/.config/Code - OSS/User/History/
+vscode/.config/Code - OSS/User/Backups/

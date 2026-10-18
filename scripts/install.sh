@@ -5,17 +5,21 @@ set -e
 cd "$(dirname "$0")"
 
 echo "=== 1. Installing Official Pacman Packages ==="
-if [ -f "config/pkglist.txt" ] && command -v pacman &> /dev/null; then
-  sudo pacman -S --needed --noconfirm - < config/pkglist.txt
+if [ -f "packages/pkglist.txt" ] && command -v pacman &> /dev/null; then
+  sudo pacman -S --needed --noconfirm - < packages/pkglist.txt
 fi
 
 echo "=== 2. Installing AUR Packages ==="
-if [ -f "config/aur-pkglist.txt" ] && command -v yay &> /dev/null; then
-  yay -S --needed --noconfirm - < config/aur-pkglist.txt
+if [ -f "packages/aur-pkglist.txt" ] && command -v yay &> /dev/null; then
+  yay -S --needed --noconfirm - < packages/aur-pkglist.txt
 fi
 
 echo "=== 3. Symlinking Dotfiles with GNU Stow ==="
-stow config
+stow fastfetch
+stow kitty
+stow nvim
+stow starship
+stow vscode
 stow zsh
 
 echo "=== 4. Installing Starship Prompt ==="
@@ -40,9 +44,9 @@ fi
 
 echo "=== 6. Restoring VS Code Extensions ==="
 if command -v code-oss &> /dev/null; then
-  cat config/vscode-extensions.txt | xargs -L 1 code-oss --install-extension
+  cat packages/vscode-extensions.txt | xargs -L 1 code-oss --install-extension
 elif command -v code &> /dev/null; then
-  cat config/vscode-extensions.txt | xargs -L 1 code --install-extension
+  cat packages/vscode-extensions.txt | xargs -L 1 code --install-extension
 fi
 
 echo "=== 7. Headlessly Syncing Neovim Plugins ==="
