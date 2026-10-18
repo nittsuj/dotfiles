@@ -1,6 +1,8 @@
 .cache/
 
 # VS Code runtime cache and history
+Code - OSS/
+Code/
 config/.config/Code\ -\ OSS/User/History/
 config/.config/Code\ -\ OSS/User/workspaceStorage/
 config/.config/Code\ -\ OSS/User/globalStorage/
