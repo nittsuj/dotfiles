@@ -1,7 +1,6 @@
 baobab
 base
 base-devel
-brave-bin
 cmatrix
 code
 decibels
@@ -86,8 +85,6 @@ vim
 wireplumber
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
-yay-bin
-yay-bin-debug
 yelp
 zram-generator
 zsh
