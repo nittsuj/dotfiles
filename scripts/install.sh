@@ -78,4 +78,9 @@ else
   echo "Not in a graphical session; run later: dconf load /org/gnome/ < gnome/gnome-settings.ini"
 fi
 
+echo "=== 9. Setting zsh as default shell ==="
+if [ "$SHELL" != "/usr/bin/zsh" ]; then
+  chsh -s /usr/bin/zsh
+fi
+
 echo "=== Setup Complete! ==="
