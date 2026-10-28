@@ -71,4 +71,11 @@ if command -v nvim &> /dev/null; then
   nvim --headless "+Lazy! sync" +qa
 fi
 
+echo "=== 8. Restoring GNOME Settings ==="
+if command -v dconf &> /dev/null && [ -n "$DISPLAY$WAYLAND_DISPLAY" ]; then
+  dconf load /org/gnome/ < gnome/gnome-settings.ini
+else
+  echo "Not in a graphical session; run later: dconf load /org/gnome/ < gnome/gnome-settings.ini"
+fi
+
 echo "=== Setup Complete! ==="
