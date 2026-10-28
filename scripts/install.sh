@@ -38,6 +38,10 @@ stow fastfetch
 stow kitty
 stow nvim
 stow zsh
+stow git
+
+echo "=== Enabling Git LFS ==="
+git lfs install
 
 echo "=== 6. Setting up Oh My Zsh, Powerlevel10k and Plugins ==="
 # Cloned directly instead of using the omz installer, which would overwrite ~/.zshrc
