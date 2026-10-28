@@ -11,6 +11,7 @@ epiphany
 fastfetch
 gdm
 git
+git-lfs
 gnome-backgrounds
 gnome-calculator
 gnome-calendar
@@ -64,6 +65,9 @@ malcontent
 nautilus
 neovim
 networkmanager
+nodejs
+npm
+obsidian
 opencode
 orca
 papers
@@ -80,8 +84,10 @@ spotify-launcher
 stow
 sushi
 tecla
+uv
 vim
 wireplumber
+wireshark-cli
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
 yelp

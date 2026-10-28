@@ -1,4 +1,6 @@
+antigravity-ide
 brave-bin
+claude-desktop
 visual-studio-code-bin
 yay-bin
 yay-bin-debug
