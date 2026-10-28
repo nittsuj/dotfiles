@@ -33,12 +33,15 @@ if [ -f "packages/vscode-extensions.txt" ] && command -v code &> /dev/null; then
   done < packages/vscode-extensions.txt
 fi
 
+mkdir -p ~/.ssh && chmod 700 ~/.ssh
+
 echo "=== 5. Symlinking Dotfiles with GNU Stow ==="
 stow fastfetch
 stow kitty
 stow nvim
 stow zsh
 stow git
+stow ssh
 
 echo "=== Enabling Git LFS ==="
 git lfs install
