@@ -87,6 +87,7 @@ spotify-launcher
 stow
 sushi
 tecla
+tree-sitter-cli
 uv
 vim
 wireplumber
