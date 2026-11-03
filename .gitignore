@@ -1,8 +1,9 @@
 .cache/
 
-# VS Code runtime cache and state (never track)
-Code - OSS/
-Code/
+# VS Code runtime cache and state at repo root (never track).
+# The vscode/ package tracks only User/settings.json.
+/Code - OSS/
+/Code/
 
 # Per-machine zsh config
 .zshrc.local

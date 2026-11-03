@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Catppuccin Latte",
+    "window.menuBarVisibility": "compact",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "geminicodeassist.inlineSuggestions.enableAuto": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.preview": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open"
+}
