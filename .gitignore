@@ -3,3 +3,6 @@
 # VS Code runtime cache and state (never track)
 Code - OSS/
 Code/
+
+# Per-machine zsh config
+.zshrc.local

@@ -22,3 +22,13 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$HOME/.local/bin:$PATH"
 [[ -d "$HOME/.deno/bin" ]] && export PATH="$HOME/.deno/bin:$PATH"
+
+# Tools (skip if not installed)
+(( $+commands[zoxide] )) && eval "$(zoxide init zsh)"
+(( $+commands[fzf] )) && source <(fzf --zsh)
+
+# Aliases
+[[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/aliases.zsh" ]] && source "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/aliases.zsh"
+
+# Per-machine config and secrets (not tracked)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
