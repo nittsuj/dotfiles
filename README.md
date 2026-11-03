@@ -43,6 +43,8 @@ cd ~/dotfiles
 
 The script installs the pacman package list, bootstraps yay from the AUR if it is missing, installs the AUR package list, installs the VS Code extensions, stows the config directories, enables Git LFS, clones Oh My Zsh, Powerlevel10k and the two zsh plugins, runs `nvim --headless "+Lazy! sync"` to install the Neovim plugins, restores the GNOME settings, and sets zsh as the login shell. It stops on the first failure.
 
+Before stowing, any real file that would block a link (say, a default `~/.zshrc`) is moved to `~/.dotfiles-backup/<timestamp>/`. Run `./scripts/install.sh --dry-run` to print every command without running it.
+
 If you only want the symlinks:
 
 ```
