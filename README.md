@@ -7,6 +7,7 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 ```
 .
 ├── fastfetch/   .config/fastfetch/config.jsonc
+├── claude/      .claude/ (settings.json, skills/pr-description)
 ├── git/         .gitconfig
 ├── gnome/       gnome-settings.ini (dconf export, not stowed)
 ├── kitty/       .config/kitty/ (kitty.conf, theme, light-theme.auto.conf)
@@ -14,6 +15,8 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 ├── packages/    pkglist.txt, aur-pkglist.txt, vscode-extensions.txt
 ├── scripts/     install.sh
 ├── ssh/         .ssh/config
+├── vscode/      .config/Code/User/settings.json
+├── xdg/         .config/ (mimeapps.list, user-dirs.dirs)
 └── zsh/         .zshrc, .p10k.zsh, .config/zsh/aliases.zsh
 ```
 
@@ -28,6 +31,12 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 **git** holds the global `.gitconfig`: name, email, and Neovim as the editor.
 
 **ssh** holds only `~/.ssh/config`, the host shortcuts. Keys are never tracked; generate or copy them separately on each machine.
+
+**vscode** tracks only `User/settings.json`. Extensions are listed in `packages/vscode-extensions.txt`.
+
+**claude** holds Claude Code's `settings.json` and the `pr-description` skill. Credentials, history and session data stay out.
+
+**xdg** holds `mimeapps.list` (default apps) and `user-dirs.dirs` (adds `~/Projects`). Some apps rewrite these files and replace the link with a plain file; if `ls -l` shows no arrow, copy the change into the repo and re-run `stow xdg`.
 
 **gnome** is not a Stow package. `gnome-settings.ini` is a `dconf dump` of `/org/gnome/` (keybindings, theme, fonts, extensions, dock favorites), and `install.sh` loads it back with `dconf load`.
 
@@ -48,8 +57,8 @@ Before stowing, any real file that would block a link (say, a default `~/.zshrc`
 If you only want the symlinks:
 
 ```
-mkdir -p ~/.ssh && chmod 700 ~/.ssh
-stow zsh kitty nvim fastfetch git ssh
+mkdir -p ~/.ssh ~/.claude/skills ~/.config/Code/User && chmod 700 ~/.ssh
+stow zsh kitty nvim fastfetch git ssh vscode claude xdg
 ```
 
 Run that from the repo root. It creates `~/.zshrc`, `~/.p10k.zsh`, `~/.gitconfig`, `~/.ssh/config`, and the `.config` entries, and does not touch anything else. `~/.ssh` is created first so Stow links only the config file instead of the whole directory.
