@@ -36,12 +36,27 @@ fi
 mkdir -p ~/.ssh && chmod 700 ~/.ssh
 
 echo "=== 5. Symlinking Dotfiles with GNU Stow ==="
-stow fastfetch
-stow kitty
-stow nvim
-stow zsh
-stow git
-stow ssh
+STOW_PKGS=(fastfetch kitty nvim zsh git ssh)
+BACKUP_DIR="$HOME/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)"
+
+# Stow refuses to replace real files. Move any in the way to BACKUP_DIR.
+backup_conflicts() {
+  local pkg="$1" rel target
+  while IFS= read -r rel; do
+    target="$HOME/$rel"
+    # Skip if missing, a link, or already the repo file (via a linked dir)
+    [ -e "$target" ] && [ ! -L "$target" ] || continue
+    [ "$(realpath "$target")" = "$(realpath "$pkg/$rel")" ] && continue
+    echo "Backing up ~/$rel -> $BACKUP_DIR/$rel"
+    mkdir -p "$BACKUP_DIR/$(dirname "$rel")"
+    mv "$target" "$BACKUP_DIR/$rel"
+  done < <(cd "$pkg" && find . \( -type f -o -type l \) -printf '%P\n')
+}
+
+for pkg in "${STOW_PKGS[@]}"; do
+  backup_conflicts "$pkg"
+  stow "$pkg"
+done
 
 echo "=== Enabling Git LFS ==="
 git lfs install
