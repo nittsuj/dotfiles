@@ -7,3 +7,7 @@
 
 # Per-machine zsh config
 .zshrc.local
+
+# Claude Code: never track secrets, history or session data
+.credentials.json
+history.jsonl
