@@ -58,7 +58,11 @@ fi
 run mkdir -p ~/.ssh && run chmod 700 ~/.ssh
 
 echo "=== 5. Symlinking Dotfiles with GNU Stow ==="
-STOW_PKGS=(fastfetch kitty nvim zsh git ssh)
+STOW_PKGS=(fastfetch kitty nvim zsh git ssh vscode claude xdg)
+
+# Make real dirs first so stow links single files, not whole app dirs
+# (else app state like ~/.claude history would land in the repo)
+run mkdir -p ~/.claude/skills ~/.config/Code/User
 BACKUP_DIR="$HOME/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)"
 
 # Stow refuses to replace real files. Move any in the way to BACKUP_DIR.
