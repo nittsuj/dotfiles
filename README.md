@@ -6,14 +6,14 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 
 ```
 .
-├── fastfetch/   .config/fastfetch/config.jsonc
 ├── claude/      .claude/ (settings.json, skills/pr-description)
+├── fastfetch/   .config/fastfetch/config.jsonc
 ├── git/         .gitconfig
 ├── gnome/       gnome-settings.ini (dconf export, not stowed)
 ├── kitty/       .config/kitty/ (kitty.conf, theme, light-theme.auto.conf)
 ├── nvim/        .config/nvim/ (init.lua, lua/config, lua/plugins, lazy-lock.json)
-├── packages/    pkglist.txt, aur-pkglist.txt, vscode-extensions.txt
-├── scripts/     install.sh
+├── packages/    pkglist.txt, aur-pkglist.txt, vscode-extensions.txt (not stowed)
+├── scripts/     install.sh (not stowed)
 ├── ssh/         .ssh/config
 ├── vscode/      .config/Code/User/settings.json
 ├── xdg/         .config/ (mimeapps.list, user-dirs.dirs)
@@ -22,25 +22,50 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 
 ## What's in here
 
-**zsh** runs Oh My Zsh with the Powerlevel10k theme, plus zsh-autosuggestions and zsh-syntax-highlighting. Neither the theme nor the plugins are tracked here; `install.sh` clones them into `~/.oh-my-zsh/custom`. Aliases live in `~/.config/zsh/aliases.zsh`. zoxide, fzf, eza and bat hook in only when installed. Put per-machine settings and secrets in `~/.zshrc.local`, which is sourced last and never tracked.
+Same order as the layout above.
 
-**kitty** uses Fira Code at 14pt, semi-transparent windows, a background image, and the Atelier Cave Dark theme. `light-theme.auto.conf` switches the palette based on the system color scheme.
+### claude
+Claude Code's `settings.json` and the `pr-description` skill. Credentials, history and session data stay out.
 
-**nvim** starts at `init.lua`, which loads `lua/config/` (options, keymaps, lazy.nvim bootstrap) and every spec in `lua/plugins/`. Plugins: catppuccin, telescope, nvim-treesitter (main branch, needs `tree-sitter-cli`), mason + nvim-lspconfig (lua_ls, pyright, vtsls, tinymist), blink.cmp, conform.nvim (format on save, falls back to the LSP), and gitsigns. Leader is space. Tabs are 4 spaces, relative line numbers on. Main keys: `<leader>f*` telescope, `gd` / `<leader>rn` / `<leader>ca` LSP, `<leader>cf` format, `]h` / `[h` / `<leader>h*` git hunks.
+### fastfetch
+`config.jsonc` shows the Arch logo with the hasecilu template.
 
-**git** holds the global `.gitconfig`: name, email, and Neovim as the editor.
+### git
+The global `.gitconfig`: name, email, Neovim as editor, Git LFS, `main` as default branch, rebase on pull, auto upstream on push, prune on fetch, `rerere`, and aliases (`st`, `co`, `sw`, `lg`, `amend`, `undo`).
 
-**ssh** holds only `~/.ssh/config`, the host shortcuts. Keys are never tracked; generate or copy them separately on each machine.
+### gnome
+Not a Stow package. `gnome-settings.ini` is a `dconf dump` of `/org/gnome/` (keybindings, theme, fonts, extensions, dock favorites), and `install.sh` loads it back with `dconf load`.
 
-**vscode** tracks only `User/settings.json`. Extensions are listed in `packages/vscode-extensions.txt`.
+### kitty
+Fira Code at 14pt, semi-transparent windows, a background image, and the Atelier Cave Dark theme. `light-theme.auto.conf` switches the palette based on the system color scheme.
 
-**claude** holds Claude Code's `settings.json` and the `pr-description` skill. Credentials, history and session data stay out.
+### nvim
+`init.lua` loads `lua/config/` (options, keymaps, lazy.nvim bootstrap) and every spec in `lua/plugins/`. Leader is space. Tabs are 4 spaces, relative line numbers on.
 
-**xdg** holds `mimeapps.list` (default apps) and `user-dirs.dirs` (adds `~/Projects`). Some apps rewrite these files and replace the link with a plain file; if `ls -l` shows no arrow, copy the change into the repo and re-run `stow xdg`.
+- **Plugins:** catppuccin, telescope, nvim-treesitter (main branch, needs `tree-sitter-cli`), mason + nvim-lspconfig (lua_ls, pyright, vtsls, tinymist), blink.cmp, conform.nvim (format on save, falls back to the LSP), gitsigns.
+- **Keys:** `<leader>f*` telescope, `gd` / `<leader>rn` / `<leader>ca` LSP, `<leader>cf` format, `]h` / `[h` / `<leader>h*` git hunks.
 
-**gnome** is not a Stow package. `gnome-settings.ini` is a `dconf dump` of `/org/gnome/` (keybindings, theme, fonts, extensions, dock favorites), and `install.sh` loads it back with `dconf load`.
+### packages
+Software a fresh install should end up with: `pkglist.txt` for pacman, `aur-pkglist.txt` for the AUR, `vscode-extensions.txt` for VS Code.
 
-**packages** lists the software a fresh install should end up with. `pkglist.txt` is for pacman, `aur-pkglist.txt` for the AUR, `vscode-extensions.txt` for VS Code.
+### scripts
+`install.sh` sets up a new machine. See [Install](#install).
+
+### ssh
+Only `~/.ssh/config`, the host shortcuts. Keys are never tracked; generate or copy them separately on each machine.
+
+### vscode
+Only `User/settings.json`. Extensions are listed in `packages/vscode-extensions.txt`.
+
+### xdg
+`mimeapps.list` (default apps) and `user-dirs.dirs` (adds `~/Projects`). Some apps rewrite these files and replace the link with a plain file; if `ls -l` shows no arrow, copy the change into the repo and re-run `stow xdg`.
+
+### zsh
+Oh My Zsh with Powerlevel10k, zsh-autosuggestions and zsh-syntax-highlighting. The theme and plugins are not tracked; `install.sh` clones them into `~/.oh-my-zsh/custom`.
+
+- **Aliases:** `~/.config/zsh/aliases.zsh`.
+- **Tools:** zoxide, fzf, eza and bat hook in only when installed.
+- **Local:** per-machine settings and secrets go in `~/.zshrc.local`, sourced last and never tracked.
 
 ## Install
 
