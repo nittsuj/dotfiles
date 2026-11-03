@@ -48,13 +48,7 @@ require("lazy").setup({
 })
 
 -- 4. Apply Colorscheme
-vim.cmd.colorscheme("catppuccin")
-
-
-
-
-
-
-
-
-
+-- Fall back to built-in theme if catppuccin is not installed yet
+if not pcall(vim.cmd.colorscheme, "catppuccin") then
+  vim.cmd.colorscheme("habamax")
+end
