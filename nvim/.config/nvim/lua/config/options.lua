@@ -13,3 +13,12 @@ opt.smartindent = true
 opt.termguicolors = true
 opt.ignorecase = true
 opt.smartcase = true
+
+opt.signcolumn = "yes"      -- no jump when signs show
+opt.cursorline = true
+opt.scrolloff = 8
+opt.splitright = true
+opt.splitbelow = true
+opt.undofile = true         -- undo survives restart
+opt.updatetime = 250
+opt.clipboard = "unnamedplus"
