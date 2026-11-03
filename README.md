@@ -10,7 +10,7 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 ├── git/         .gitconfig
 ├── gnome/       gnome-settings.ini (dconf export, not stowed)
 ├── kitty/       .config/kitty/ (kitty.conf, theme, light-theme.auto.conf)
-├── nvim/        .config/nvim/ (init.lua, lazy-lock.json)
+├── nvim/        .config/nvim/ (init.lua, lua/config, lua/plugins, lazy-lock.json)
 ├── packages/    pkglist.txt, aur-pkglist.txt, vscode-extensions.txt
 ├── scripts/     install.sh
 ├── ssh/         .ssh/config
@@ -23,7 +23,7 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 
 **kitty** uses Fira Code at 14pt, semi-transparent windows, a background image, and the Atelier Cave Dark theme. `light-theme.auto.conf` switches the palette based on the system color scheme.
 
-**nvim** is configured from a single `init.lua`. lazy.nvim bootstraps itself on first run and manages three plugins: catppuccin, telescope.nvim, and nvim-treesitter. Leader is space. Tabs are 4 spaces, relative line numbers on.
+**nvim** starts at `init.lua`, which loads `lua/config/` (options, keymaps, lazy.nvim bootstrap) and every spec in `lua/plugins/`. Plugins: catppuccin, telescope, nvim-treesitter (main branch, needs `tree-sitter-cli`), mason + nvim-lspconfig (lua_ls, pyright, vtsls, tinymist), blink.cmp, conform.nvim (format on save, falls back to the LSP), and gitsigns. Leader is space. Tabs are 4 spaces, relative line numbers on. Main keys: `<leader>f*` telescope, `gd` / `<leader>rn` / `<leader>ca` LSP, `<leader>cf` format, `]h` / `[h` / `<leader>h*` git hunks.
 
 **git** holds the global `.gitconfig`: name, email, and Neovim as the editor.
 
