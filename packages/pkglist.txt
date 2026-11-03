@@ -1,6 +1,7 @@
 baobab
 base
 base-devel
+bat
 cmatrix
 decibels
 docker
@@ -8,7 +9,9 @@ docker-buildx
 docker-compose
 efibootmgr
 epiphany
+eza
 fastfetch
+fzf
 gdm
 git
 git-lfs
@@ -91,5 +94,6 @@ wireshark-cli
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
 yelp
+zoxide
 zram-generator
 zsh
