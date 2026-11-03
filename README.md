@@ -14,12 +14,12 @@ Personal configuration for Arch Linux, managed with [GNU Stow](https://www.gnu.o
 ├── packages/    pkglist.txt, aur-pkglist.txt, vscode-extensions.txt
 ├── scripts/     install.sh
 ├── ssh/         .ssh/config
-└── zsh/         .zshrc, .p10k.zsh
+└── zsh/         .zshrc, .p10k.zsh, .config/zsh/aliases.zsh
 ```
 
 ## What's in here
 
-**zsh** runs Oh My Zsh with the Powerlevel10k theme, plus zsh-autosuggestions and zsh-syntax-highlighting. Neither the theme nor the plugins are tracked here; `install.sh` clones them into `~/.oh-my-zsh/custom`.
+**zsh** runs Oh My Zsh with the Powerlevel10k theme, plus zsh-autosuggestions and zsh-syntax-highlighting. Neither the theme nor the plugins are tracked here; `install.sh` clones them into `~/.oh-my-zsh/custom`. Aliases live in `~/.config/zsh/aliases.zsh`. zoxide, fzf, eza and bat hook in only when installed. Put per-machine settings and secrets in `~/.zshrc.local`, which is sourced last and never tracked.
 
 **kitty** uses Fira Code at 14pt, semi-transparent windows, a background image, and the Atelier Cave Dark theme. `light-theme.auto.conf` switches the palette based on the system color scheme.
 
